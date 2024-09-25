@@ -1,7 +1,7 @@
 import 'should';
-import { sqlNameToColumn } from '../src/index';
+import { sqlNameToColumn } from '../src';
 
-describe('SQL Parser', function() {
+describe('SQL Name to Column Mapper', function() {
   describe('sqlNameToColumn', function() {
     it('should map column names correctly in a simple SELECT statement', function() {
       const sql = 'SELECT aa FROM b WHERE cc = dd';
